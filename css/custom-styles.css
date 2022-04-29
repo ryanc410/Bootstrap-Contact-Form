@@ -1,0 +1,5 @@
+/* FORM VALIDATION MESSAGE STYLES */
+.invalid-input { border: 2px solid red !important;}
+.valid-input { border: 3.5px solid green !important;}
+.invalid-msg { color: red;font-size: 18px;font-weight: 550;}
+.deny-submit { opacity: .5;cursor: not-allowed !important;}
