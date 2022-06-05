@@ -42,14 +42,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
         try {
             //Server settings
-            $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
-            $mail->isSMTP();                                            //Send using SMTP
-            $mail->Host = 'mail.privateemail.com';                     //Set the SMTP server to send through
-            $mail->SMTPAuth = true;                                   //Enable SMTP authentication
-            $mail->Username = 'admin@713techsupport.com';                     //SMTP username
-            $mail->Password = '#H!town$rdcRYAN410';                               //SMTP password
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-            $mail->Port = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+            $mail->SMTPDebug = SMTP::DEBUG_SERVER;               //Enable verbose debug output
+            $mail->isSMTP();                                     //Send using SMTP
+            $mail->Host = '';                                    //Set the SMTP server to send through
+            $mail->SMTPAuth = true;                              //Enable SMTP authentication
+            $mail->Username = '';                                //SMTP username
+            $mail->Password = '';                                //SMTP password
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;     //Enable implicit TLS encryption
+            $mail->Port = 465;                                   //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
             //Recipients
             $mail->setFrom('noreply@713techsupport.com', 'noreply');
